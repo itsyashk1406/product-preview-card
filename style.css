@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 1rem;
+    font-family: 'Montressat', sans-serif;
+    font-size: 0.875rem;
+    display: grid;
+    place-content: center;
+    background-color: hsl(30, 38%, 92%);
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1{
+    font-size: 2rem;
+    font-family: "Fraunces",serif;
+    color: black;
+    line-height: 1;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.row{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.Perfume{
+    letter-spacing: 5px;
+}
+.content{
+    padding: 1em;
+    display: grid;
+    color: hsl(228, 12%, 48%)
+}
+.prices{
+    display: flex;
+    gap: 2rem;
+    font-family: "Fraunces",serif;
+    align-items: center;
+    margin-bottom: 1rem;
+
+
+}
+.prices span:nth-child(1){
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+.btn{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+background-color: hsl(158, 36%, 37%);
+color: white;
+padding: 0.75em 3em;
+border-radius: 8px;
+transition: 0.5;
+}
+.btn:hover{
+    background-color: hsl(158, 36%, 27%);
+}
+.img2{
+    display: none;
+}
+@media (min-width:600px) {
+
+html,body{
+    height: 100%;
+}
+    .row{
+        display: flex;
+        max-width: 600px;
+        gap: 1rem;    
+    }
+    .col{
+        width: 100%;
+    }
+
+.img1   {
+    display: none;
+    visibility: hidden;
+}
+.img2{
+    display: block;
+
+}
+}
